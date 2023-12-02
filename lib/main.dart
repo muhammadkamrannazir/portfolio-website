@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:portfolio/Screen%20Section/home.dart';
 
@@ -11,10 +12,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Portfolio',
-      home: HomeScreen(),
+    return ScreenUtilInit(
+      minTextAdapt: true,
+      designSize: const Size(1920, 1080),
+      builder: (context, child) => const GetMaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'My Portfolio',
+        home: HomeScreen(),
+      ),
     );
   }
 }

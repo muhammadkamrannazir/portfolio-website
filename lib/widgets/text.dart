@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomText extends StatelessWidget {
   final String text;
@@ -14,7 +15,7 @@ class CustomText extends StatelessWidget {
     this.text, {
     Key? key,
     this.maxLines,
-    this.color = Colors.black,
+    this.color = Colors.white,
     this.fontSize,
     this.fontWeight = FontWeight.w400,
     this.textAlign = TextAlign.start,
@@ -31,7 +32,7 @@ class CustomText extends StatelessWidget {
       style: TextStyle(
         height: 1,
         color: color,
-        fontSize: fontSize ?? 20,
+        fontSize: fontSize ?? 20.sp,
         fontWeight: fontWeight,
         // fontFamily: 'Noto Nastaliq Urdu',
         overflow: overflow,
