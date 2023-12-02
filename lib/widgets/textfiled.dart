@@ -87,7 +87,7 @@ class SearchField extends StatelessWidget {
       style: TextStyle(color: AppColors.white, fontSize: 18),
       decoration: InputDecoration(
         hintText: 'Search',
-        hintStyle: TextStyle(color: AppColors.grey),
+        hintStyle: TextStyle(color: AppColors.primary),
         suffixIcon: Padding(
           padding: const EdgeInsets.only(right: 4),
           child: CircleAvatar(
