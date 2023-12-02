@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 import '../utils/colors.dart';
@@ -39,9 +38,9 @@ class CustomDropdownButton extends StatelessWidget {
             hintText: hintText,
             hintStyle: TextStyle(
               color: AppColors.white,
-              fontSize: 16.sp,
+              fontSize: 16,
             ),
-            contentPadding: EdgeInsets.only(right: 10.w, left: 8),
+            contentPadding: EdgeInsets.only(right: 10, left: 8),
             border: border(),
             enabledBorder: border(),
             focusedBorder: focusedBorder(),
@@ -63,7 +62,7 @@ class CustomDropdownButton extends StatelessWidget {
                 item,
                 style: TextStyle(
                   color: AppColors.white,
-                  fontSize: 16.sp,
+                  fontSize: 16,
                 ),
               );
             }).toList();
@@ -77,7 +76,7 @@ class CustomDropdownButton extends StatelessWidget {
                 value,
                 style: TextStyle(
                   color: AppColors.white,
-                  fontSize: 16.sp,
+                  fontSize: 16,
                 ),
               ),
             );

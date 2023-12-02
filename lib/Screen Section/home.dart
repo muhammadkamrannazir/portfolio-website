@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:portfolio/utils/colors.dart';
 import 'package:portfolio/utils/images.dart';
 import 'package:portfolio/widgets/text.dart';
@@ -14,7 +13,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           Container(
             color: AppColors.appbarBackgroundColor,
-            height: 113.h,
+            height: 113,
             width: double.infinity,
             child: Row(
               children: [
